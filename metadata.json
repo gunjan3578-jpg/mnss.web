@@ -1,0 +1,6 @@
+{
+  "name": "Mahendra Narayan Seva Sansthan (MNSS)",
+  "description": "Official website for Mahendra Narayan Seva Sansthan, a registered NGO in Samastipur, Bihar dedicated to educational support, healthcare services, and rural community welfare.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
