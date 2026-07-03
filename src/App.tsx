@@ -270,7 +270,7 @@ export default function App() {
               className="lg:col-span-5 grid grid-cols-2 gap-4"
             >
               <div className="p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 hover:border-white/20 transition group">
-                <div className="text-3xl lg:text-4xl font-extrabold text-teal-300 mb-1 group-hover:scale-105 transition-transform duration-300 origin-left">5,000+</div>
+                <div className="text-3xl lg:text-4xl font-extrabold text-teal-300 mb-1 group-hover:scale-105 transition-transform duration-300 origin-left">500+</div>
                 <div className="text-xs font-bold text-emerald-100 uppercase tracking-wider">Household Toilets Built</div>
               </div>
               <div className="p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 hover:border-white/20 transition group">
@@ -672,32 +672,6 @@ export default function App() {
                     </AnimatePresence>
                   </div>
                 </form>
-              </div>
-
-              {/* Live Session Inbox Display */}
-              <div className="bg-slate-900 text-slate-100 rounded-3xl p-6 shadow-md border border-slate-800">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-teal-400 flex items-center gap-1.5">
-                    <Clock size={14} className="animate-pulse" />
-                    <span>Live Messages Inbox (Session Logs)</span>
-                  </h4>
-                  <span className="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full font-mono">
-                    {inquiries.length} Messages
-                  </span>
-                </div>
-                
-                <div className="space-y-4 max-h-[220px] overflow-y-auto pr-1">
-                  {inquiries.map((inq) => (
-                    <div key={inq.id} className="p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 text-xs text-slate-300 relative space-y-1">
-                      <div className="flex justify-between items-center text-[10px] text-teal-300 font-mono">
-                        <span className="font-bold uppercase tracking-tight">{inq.name} ({inq.email.split('@')[0]})</span>
-                        <span>{inq.timestamp}</span>
-                      </div>
-                      <p className="leading-relaxed text-slate-400 mt-1">{inq.message}</p>
-                      <span className="absolute right-3 bottom-1.5 text-[8px] font-mono text-slate-600">{inq.id}</span>
-                    </div>
-                  ))}
-                </div>
               </div>
 
             </div>
